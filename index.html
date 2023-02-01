@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Папин сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <section id="home">
+            <div class="header-container container">
+                <div class="nav-box" >
+                    <nav class="nav" id="nav">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="" class="logo-img">
+                            <span>Мастер Эдуард</span>
+                        </a>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active__link">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#services" class="nav__link">Услуги</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#whyme" class="nav__link">Почему я</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#review" class="nav__link">Отзывы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">Оставить заявку</a>
+                            </li>
+                        </ul>
+                        <div class="nav__menu" id="nav-menu">
+                            <div class="nav-menu__info">
+                                <a href="#" class="info__number">8 (905) 416-90-80</a>
+                                <a href="#" class="info__email">roma3928@mail.ru</a>
+                            </div>
+    
+                            <div class="nav-menu__socials">
+                                <a href="https://www.avito.ru/pyatigorsk/predlozheniya_uslug/remont_stiralnyh_posudomoechnyh_i_sushilnyh_mashin_1923912488"
+                                    class="nav-menu__socials__icon" target="_blank">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 83" xml:space="preserve">
+                                        <g transform="translate(14 14)">
+                                            <circle cx="46.7" cy="46.7" r="22.5" fill="#97CF26" />
+                                            <circle cx="4.5" cy="46.7" r="10.5" fill="#A169F7" />
+                                            <circle cx="46.7" cy="4.5" r="14.4" fill="#FF6163" />
+                                            <circle cx="4.5" cy="4.5" r="18.5" fill="#00AAFF" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="https://wa.me/79054169080" class="nav-menu__socials__icon" target="_blank">
+                                    <svg width="35px" height="35px" viewBox="0 0 100 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM69.7626 28.9928C64.6172 23.841 57.7739 21.0027 50.4832 21C35.4616 21 23.2346 33.2252 23.2292 48.2522C23.2274 53.0557 24.4823 57.7446 26.8668 61.8769L23 76L37.4477 72.2105C41.4282 74.3822 45.9107 75.5262 50.4714 75.528H50.4823C65.5029 75.528 77.7299 63.301 77.7363 48.2749C77.7408 40.9915 74.9089 34.1446 69.7626 28.9928ZM50.4841 70.9246H50.475C46.4099 70.9228 42.4231 69.8306 38.9455 67.7671L38.118 67.2761L29.5441 69.525L31.8322 61.1658L31.2938 60.3082C29.0266 56.7015 27.8289 52.5337 27.8308 48.2531C27.8353 35.7633 37.9979 25.6025 50.4923 25.6025C56.5426 25.6043 62.23 27.9642 66.5069 32.2457C70.7839 36.5272 73.1374 42.2183 73.1356 48.2713C73.131 60.7629 62.9693 70.9246 50.4841 70.9246ZM62.9086 53.9588C62.2274 53.6178 58.8799 51.9708 58.2551 51.7435C57.6313 51.5161 57.1766 51.4024 56.7228 52.0845C56.269 52.7666 54.964 54.2998 54.5666 54.7545C54.1692 55.2092 53.7718 55.2656 53.0915 54.9246C52.9802 54.8688 52.8283 54.803 52.6409 54.7217L52.6406 54.7216C51.6816 54.3056 49.7905 53.4855 47.6151 51.5443C45.5907 49.7382 44.2239 47.5084 43.8265 46.8272C43.4291 46.1452 43.7837 45.7769 44.1248 45.4376C44.3292 45.2338 44.564 44.9478 44.7987 44.662C44.9157 44.5194 45.0328 44.3768 45.146 44.2445C45.4345 43.9075 45.56 43.6516 45.7302 43.3049C45.7607 43.2427 45.7926 43.1776 45.8272 43.1087C46.0545 42.654 45.9409 42.2565 45.7708 41.9155C45.6572 41.6877 45.0118 40.1167 44.4265 38.6923C44.1355 37.984 43.8594 37.3119 43.671 36.8592C43.1828 35.687 42.6883 35.69 42.2913 35.6924C42.2386 35.6928 42.1876 
+                                        35.6931 42.1386 35.6906C41.7421 35.6706 41.2874 35.667 40.8336 35.667C40.3798 35.667 39.6423 35.837 39.0175 36.5191C38.9773 36.5631 38.9323 36.6111 38.8834 36.6633L38.8831 36.6637C38.1735 37.4213 36.634 39.0648 36.634 42.2002C36.634 45.544 39.062 48.7748 39.4124 49.2411L39.415 49.2444C39.4371 49.274 39.4767 49.3309 39.5333 49.4121C40.3462 50.5782 44.6615 56.7691 51.0481 59.5271C52.6732 60.2291 53.9409 60.6475 54.9303 60.9612C56.5618 61.4796 58.046 61.4068 59.22 61.2313C60.5286 61.0358 63.2487 59.5844 63.8161 57.9938C64.3836 56.4033 64.3836 55.0392 64.2136 54.7554C64.0764 54.5258 63.7545 54.3701 63.2776 54.1395L63.2775 54.1394C63.1632 54.0842 63.0401 54.0247 62.9086 53.9588Z"
+                                            fill="#439FD9">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                            <a class="info__button btn button--flex" id="menu-button">
+                                <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_429_11066)">
+                                        <path class="info__button__img" d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                                            stroke="#439FD9" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                                Меню
+                            </a>
+                        </div>
+                        <div class="menu-hidden" id="menu-hidden">
+                            <div class="menu-box">
+                                <p class="menu-box__title">НАВИГАЦИЯ</p>
+                                <ul class="menu-box__list grid">
+                                    <li class="menu-box__item">
+                                        <a href="#" class="menu-box__link">Главная</a>
+                                    </li>
+                                    <li class="menu-box__item">
+                                        <a href="#services" class="menu-box__link">Услуги</a>
+                                    </li>
+                                    <li class="menu-box__item">
+                                        <a href="#whyme " class="menu-box__link">Почему я</a>
+                                    </li>
+                                    <li class="menu-box__item">
+                                        <a href="#review" class="menu-box__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu-box__item">
+                                        <a href="#contact" class="menu-box__link">Оставить заявку</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+    
+                <div class="header-data" id="header">
+                    <div class="header-data__top">
+                        <h1 class="header-data__title">Ремонт стиральных и посудомоечных машин в Пятигорске</h1>
+                        <h4 class="header-data__subtitle">Быстро приеду и решу Вашу проблему.</h4>
+                    </div>
+    
+                    <ul class="header-data__description">
+                        <li class="header-data__description__item">
+                            <img src="img/header-icon-raketa.svg" alt="">
+                            Ремонт в день звонка
+                        </li>
+                        <li class="header-data__description__item">
+                            <img src="img/header-icon-molnia.svg" alt="" class="header-icon-molnia">
+                            Срочный выезд
+                        </li>
+                        <li class="header-data__description__item">
+                            <img src="img/header-icon-emoji.svg" alt="" class="header-icon-emoji">
+                            Вежливо и аккуратно
+                        </li>
+                        <li>
+                            <a href="#contact" class="header-data__button btn button--flex">
+                                Вызвать мастера
+                            </a>
+                        </li>
+                    </ul>
+    
+    
+                    <img src="img/header-img.png" alt="" class="header__img">
+                </div>
+            </div>
+        </section>
+     
+    </header>
+
+    <main class="main">
+        <section class="services section" id="services">
+            <div class="services__container container">
+                <h1 class="section__title">Основные поломки</h1>
+                <div class="services-box grid">
+                    <div class="services-box__card">
+                        <h4 class="services-box__card__title">Как проходит выполнение ремонта?</h4>
+                        <p class="services-box__card__desription">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorum inventore fuga nobis amet, vero quaerat minima mollitia ratione!
+                            Enim alias corporis nemo debitis corrupti fuga eos eum nobis neque quis?</p>
+                        <img src="img/services-img.jpg" alt="" class="services-box__card__img">
+                    </div>
+
+                    <div class="services-box__list grid hide-mobile">
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>01</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка не включается</p>
+                            </div>
+                        </div>
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>02</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка протекает</p>
+                            </div>
+                        </div>
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>03</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка не греет воду</p>
+                            </div>
+                        </div>
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>04</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка не сливает воду</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-box__card hide-mobile">
+                        <h4 class="services-box__card__title">Как проходит выполнение ремонта?</h4>
+                        <img src="img/services-img.jpg" alt="" class="services-box__card__img">
+                    </div>
+
+                    <div class="services-box__list grid hide-mobile">
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>05</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка не набирает воду</p>
+                            </div>
+                        </div>
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>06</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка не открывается</p>
+                            </div>
+                        </div>
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>07</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Машинка не отжимает</p>
+                            </div>
+                        </div>
+                        <div class="services-box__item">
+                            <div class="services-box__item--top">
+                                <img src="img/card-img.svg" alt="">
+                                <span>08</span>
+                            </div>
+                            <div class="services-box__item--bottom">
+                                <p>Другие поломки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper services-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>01</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка не включается</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>02</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка протекает</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/machine-protekaet.png" alt="">
+                            <span>03</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка не греет воду</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>04</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка не сливает воду</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>05</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка не набирает воду</p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>06</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка не открывается</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>07</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Машинка не отжимает</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide services-slide">
+                        <div class="services-slide__top">
+                            <img src="img/card-img.svg" alt="">
+                            <span>08</span>
+                        </div>
+                        <div class="services-slide__bottom">
+                            <p>Другие поломки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="services__controlers">
+                <a href="#contact" class="services__button btn button--flex">Вызвать мастера</a>
+            </div>
+        </section>
+
+        <section class="whyme section" id="whyme">
+            <div class="container">
+                <h1 class="section__title">Почему стоит обратиться ко мне?</h1>
+                <ul class="whyme__list grid">
+                    <li class="whyme__item">
+                        <h3 class="whyme__title">Большой опыт</h3>
+                        <p class="whyme__description">Занимаюсь ремонтом стиральных и посудомоечных машин уже более лет.
+                        </p>
+                        <img src="img/experienced-master.png" alt="" class="whyme__img">
+                    </li>
+
+                    <li class="whyme__item">
+                        <h3 class="whyme__title">Гaрнтия</h3>
+                        <p class="whyme__description">Даю гарантию на все работы.</p>
+                        <img src="img/garantia-img.jpg" alt="" class="whyme__img">
+                    </li>
+
+                    <li class="whyme__item">
+                        <h3 class="whyme__title">Оперативность</h3>
+                        <p class="whyme__description">Работаю быстро, берегу время клиентов</p>
+                        <img src="img/skorost-img.png" alt="" class="whyme__img">
+                    </li>
+
+                    <li class="whyme__item">
+                        <h3 class="whyme__title">Большой опыт</h3>
+                        <p class="whyme__description">Занимаюсь ремонтом стиральных и посудомоечных машин уже более 5
+                            лет</p>
+                        <img src="img/experienced-master.png" alt="" class="whyme__img">
+                    </li>
+
+                    <li class="whyme__item hidden-block">
+                        <h3 class="whyme__title">Большой опыт</h3>
+                        <p class="whyme__description">Занимаюсь ремонтом стиральных и посудомоечных машин уже более 5
+                            лет</p>
+                        <img src="img/experienced-master.png" alt="" class="whyme__img">
+                    </li>
+
+                    <li class="whyme__item hidden-block">
+                        <h3 class="whyme__title">Большой опыт</h3>
+                        <p class="whyme__description">Занимаюсь ремонтом стиральных и посудомоечных машин уже более 5
+                            лет</p>
+                        <img src="img/experienced-master.png" alt="" class="whyme__img">
+                    </li>
+                    <a class="whyme__button btn button--flex" id="whyme__button">Показать больше</a>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brand">
+            <div class="brand-box">
+                <div class="brand-box-data">
+                    <img src="img/samsung-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/indesit-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/lg-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/ariston-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/bosh-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/miele-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/candy-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/ardo-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/siemens-logo.png" alt="" class="brand-box-data__img">
+                    <img src="img/aeg-logo.png" alt="" class="brand-box-data__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="review section" id="review">
+            <div class="container">
+                <h1 class="section__title">Отзывы</h1>
+
+                <div class="swiper review-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="review-slide swiper-slide">
+                            <div class="review-slide__content">
+                                <div class="review-slide__data">
+                                    <img src="img/client.jpg" alt="" class="review-slide__img">
+                                    <div>
+                                        <h3 class="review-slide__name">Роман</h3>
+                                        <span class="review-slide__client">Клиент</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="review-slide__description">Не сливалась вода в посудомоечной машине.
+                                Мастер приехал быстро и исправил ситуацию, еще и объяснил в чем проблема. Спасибо!</p>
+                        </div>
+                        <div class="review-slide swiper-slide">
+                            <div class="review-slide__content">
+                                <div class="review-slide__data">
+                                    <img src="img/client.jpg" alt="" class="review-slide__img">
+                                    <div>
+                                        <h3 class="review-slide__name">Роман</h3>
+                                        <span class="review-slide__client">Клиент</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="review-slide__description">Не сливалась вода в посудомоечной машине.
+                                Мастер приехал быстро и исправил ситуацию, еще и объяснил в чем проблема. Спасибо!</p>
+                        </div>
+
+                        <div class="review-slide swiper-slide">
+                            <div class="review-slide__content">
+                                <div class="review-slide__data">
+                                    <img src="img/client.jpg" alt="" class="review-slide__img">
+                                    <div>
+                                        <h3 class="review-slide__name">Роман</h3>
+                                        <span class="review-slide__client">Клиент</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="review-slide__description">Не сливалась вода в посудомоечной машине.
+                                Мастер приехал быстро и исправил ситуацию, еще и объяснил в чем проблема. Спасибо!</p>
+                        </div>
+
+                        <div class="review-slide swiper-slide">
+                            <div class="review-slide__content">
+                                <div class="review-slide__data">
+                                    <img src="img/client.jpg" alt="" class="review-slide__img">
+                                    <div>
+                                        <h3 class="review-slide__name">Роман</h3>
+                                        <span class="review-slide__client">Клиент</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                    <img src="img/star-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="review-slide__description">Не сливалась вода в посудомоечной машине.
+                                Мастер приехал быстро и исправил ситуацию, еще и объяснил в чем проблема. Спасибо!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h1 class="section__title">Оставить заявку</h1>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Имя</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Номер телефона</label>
+                            <input type="number" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Описание поломки</label>
+                        <textarea cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="contact__button btn button--flex">Отправить
+                            <img src="img/arrow-send.svg" alt="" class="button__icon">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__contaier container grid">
+                <div>
+                    <h1 class="footer__title">Эдуард</h1>
+                    <span class="footer__subtitle">Мастер</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#whyme" class="footer__link">Почему я</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.avito.ru/pyatigorsk/predlozheniya_uslug/remont_stiralnyh_posudomoechnyh_i_sushilnyh_mashin_1923912488"
+                        class="footer__social" target="_blank">
+                        <img src="img/avito-logo.svg" alt="">
+                    </a>
+                    <a href="https://wa.me/79054169080" class="footer__social" target="_blank">
+                        <img src="img/whatsapp-logo.svg" alt="">
+                    </a>
+                    <a href="https://t.me/+79054169080" class="footer__social" target="_blank">
+                        <img src="img/telegram-logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Роман Гюламбарян. Все права защищены</p>
+        </div>
+
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM7.29289 11.2929L11.2929 7.29289C11.6834 6.90237 12.3166 6.90237 12.7071 7.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071C16.3166 13.0976 15.6834 13.0976 15.2929 12.7071L13 10.4142V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V10.4142L8.70711 12.7071C8.31658 13.0976 7.68342 13.0976 7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929Z" fill="#fff"/>
+        </svg>
+    </a>
+</body>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
