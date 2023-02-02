@@ -50,11 +50,6 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;  
-
-    /* SCROLLING */
-    /* --marquee-elements-displayed: 4;
-    --marquee-element-width: calc(100vw / var(--marquee-elements-displayed));
-    --marquee-animation-duration: calc(var(--marquee-elements) * 1s); */
 }
 
 @media screen and (min-width: 768px){
@@ -399,17 +394,17 @@ textarea{
 
 .brand-box-data{
     display: flex;
-    /* justify-content: space-between; */
     column-gap: 70px;
     align-items: center;
-
-    width: 100vw;
     will-change: transform;
-    animation: bobble 14s linear infinite;
+    animation: marquee 12s linear infinite;
+}
+
+.brand-box-data li{
+    width: 100px;
 }
 
 .brand-box-data__img{
-    width: 100px;
     opacity: 0.6;
     transition: opacity .3s ease-in-out;
 }
@@ -418,12 +413,12 @@ textarea{
     opacity: 1;
 }
 
-@keyframes bobble {
+@keyframes marquee {
     0% {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-150%);
+        transform: translateX(-100%);
     }
 }
 
