@@ -397,7 +397,7 @@ textarea{
     column-gap: 70px;
     align-items: center;
     will-change: transform;
-    animation: marquee 12s linear infinite;
+    animation: marquee 16s linear infinite;
 }
 
 .brand-box-data li{
